@@ -13,7 +13,7 @@ class _AppVideoPlayerState extends State<AppVideoPlayer> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-        'https://www.sample-videos.com/video123/mp4/240/big_buck_bunny_240p_5mb.mp4')
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4')
       ..initialize().then((_) {
         _controller.play();
         setState(() {});
